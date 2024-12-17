@@ -8,7 +8,7 @@ const Experience = () => {
     {
       id: 1,
       imgSrc: "/src/assets/Documents/image copy.png",
-      imgSrc2: "/src/assets/images/image.png",
+      imgSrc2: "/Client/src/assets/images/image.png",
       alt: "R3 Systems Private Limited",
       category: "Training and Internship",
       date: "2023-7-25",
