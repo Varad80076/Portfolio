@@ -6,7 +6,6 @@ import NavBar from './componenets/NavBar';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import About from './componenets/About';
-import { PDFViewer } from '@react-pdf/renderer';
 import Experience from './componenets/Experience';
 import ContactFormm from './componenets/ContactForm';
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -15,7 +14,6 @@ import {
   faEnvelope,
   faFile,
   faFileLines,
-  faHome,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
