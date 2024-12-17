@@ -1,5 +1,5 @@
-<h1 align="center">
-  PortFolio `#0969DA`
+<h1 align="center" >
+  PortFolio 
 </h1>
 
 <div align="center">
