@@ -19,6 +19,9 @@
 
 ## Usage
 1.Ensure you have Node.js and npm installed.
+
 2.Run npm install to install dependencies.
+
 3.Run npm run dev to start the development server.
+
 4.Open the provided URL (e.g., http://localhost:3000).
