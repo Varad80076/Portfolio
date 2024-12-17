@@ -1,5 +1,5 @@
-<h1 align="center">
-  PortFolio
+<h1 align="center" >
+  PortFolio 
 </h1>
 
 <div align="center">
@@ -18,14 +18,8 @@
 - ExpressJs
 
 ## Usage
-1.Ensure you have Node.js and npm installed.
+1. Ensure you have Node.js and npm installed.   
+2. Run npm install to install dependencies.
+3. Run npm run dev to start the development server.
+4. Open the provided URL (e.g., http://localhost:3000).
 
-2.Run npm install to install dependencies.
-
-3.Run npm run dev to start the development server.
-<<<<<<< HEAD
-4.Open the provided URL (e.g., http://localhost:3000).
-=======
-
-4.Open the provided URL (e.g., http://localhost:3000).
->>>>>>> ca67d82b83e5fb160247a32ef957a253aea0b110
