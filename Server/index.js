@@ -8,7 +8,7 @@ const cors =require('cors');
 app.use(cors(
     {
         origin:["https://portfolio-varad-varad80076s-projects.vercel.app"],
-        methods:['GET','POST'],
+        methods:['POST'],
         credentials:true
     }
 ));
