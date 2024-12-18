@@ -7,8 +7,8 @@ const Experience = () => {
   const blogPosts = [
     {
       id: 1,
-      imgSrc: "/src/assets/Documents/image copy.png",
-      imgSrc2: "/Client/src/assets/images/image.png",
+      imgSrc: "/public/images/document/image copy.png",
+      imgSrc2: "/public/images/image.png",
       alt: "R3 Systems Private Limited",
       category: "Training and Internship",
       date: "2023-7-25",
@@ -17,8 +17,8 @@ const Experience = () => {
     },
     {
       id: 2,
-      imgSrc: "/src/assets/Documents/image.png",
-      imgSrc2: "/src/assets/images/wipro-removebg.png",
+      imgSrc: "/public/images/document/image.png",
+      imgSrc2: "/public/images/wipro-removebg.png",
       alt: "Wipro Limited",
       category: "Training",
       date: "2024-9-15",

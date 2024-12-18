@@ -9,15 +9,15 @@ const Projects = () => {
 
   const categories = ['All','Web development','Ui/Ux Design','Web design',];
   const projects = [
-    { id: 1, title: 'Flipkart Clone', category: 'Web design', image: '/src/assets/images/web design/Screenshot 2024-12-17 145436.png' },
-    { id: 2, title: 'Pm Awas Yojana', category: 'Web development', image: '/src/assets/images/Web Development/Screenshot 2024-12-17 145921.png' },
-    { id: 3, title: 'Netflix Clone', category: 'Web design', image: '/Client/src/assets/images/web design/Screenshot 2024-12-17 114104.png' },
-    { id: 4, title: 'Pizza Hut', category: 'Ui/Ux Design', image: '/src/assets/images/UiUX/image copy 2.png' },
-    { id: 5, title: 'ATG Hotel Booking App.', category: 'Ui/Ux Design', image: '/src/assets/images/UiUX/image copy.png' },
-    { id: 6, title: 'Battel Hub', category: 'Ui/Ux Design', image: '/src/assets/images/UiUX/image.png' },
-    { id: 7, title: 'PortFolio', category: 'Web development', image: '/src/assets/images/Web Development/image.png' },
-    { id: 8, title: 'Music Clone', category: 'Ui/Ux Design', image: '/src/assets/images/UiUX/image copy 4.png' },
-    { id: 9, title: 'Shoe shoping Website', category: 'Web development', image: '/src/assets/images/Web Development/Screenshot 2024-06-07 103206.png' },
+    { id: 1, title: 'Flipkart Clone', category: 'Web design', image: '/public/images/web design/Screenshot 2024-12-17 145436.png' },
+    { id: 2, title: 'Pm Awas Yojana', category: 'Web development', image: '/public/images/Web Development/Screenshot 2024-12-17 145921.png' },
+    { id: 3, title: 'Netflix Clone', category: 'Web design', image: '/public/images/web design/Screenshot 2024-12-17 114104.png' },
+    { id: 4, title: 'Pizza Hut', category: 'Ui/Ux Design', image: '/public/images/UiUX/image copy 2.png' },
+    { id: 5, title: 'ATG Hotel Booking App.', category: 'Ui/Ux Design', image: '/public/images/UiUX/image copy.png' },
+    { id: 6, title: 'Battel Hub', category: 'Ui/Ux Design', image: '/public/images/UiUX/image.png' },
+    { id: 7, title: 'PortFolio', category: 'Web development', image: '/public/images/Web Development/image.png' },
+    { id: 8, title: 'Music Clone', category: 'Ui/Ux Design', image: '/public/images/UiUX/image copy 4.png' },
+    { id: 9, title: 'Shoe shoping Website', category: 'Web development', image: '/public/images/Web Development/Screenshot 2024-06-07 103206.png' },
   ];
 
   const filteredProjects =
