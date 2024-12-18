@@ -15,7 +15,7 @@ function ContactFormm() {
       try {
         const response = await fetch('https://portfolio-flame-rho-71.vercel.app/contact', {
           method: 'POST',
-          body: JSON.stringify({ name, email, description: message }), // Simplified object creation
+          body: JSON.stringify({ name, email, message }), // Simplified object creation
           headers: {
             'Content-Type': 'application/json' // Corrected header name
           }
