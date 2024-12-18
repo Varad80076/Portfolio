@@ -7,7 +7,7 @@ app.use(express.json());
 const cors =require('cors');
 app.use(cors(
     {
-        origin:["https://portfolio-varad-varad80076s-projects.vercel.app"],
+        origin:["https://portfolio-varad-theta.vercel.app"],
         methods:['POST'],
         credentials:true
     }
