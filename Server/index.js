@@ -9,7 +9,7 @@ app.use(cors(
     {
         origin:["https://portfolio-varad-theta.vercel.app"],
         methods:['GET','POST'],
-        credentials:true
+        allowedHeaders: 'Content-Type,Authorization',
     }
 ));
 
