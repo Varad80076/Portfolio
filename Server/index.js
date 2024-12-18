@@ -5,7 +5,13 @@ app.use(express.json());
 
 
 const cors =require('cors');
-app.use(cors());
+app.use(cors(
+    {
+        origin:["portfolio-varad-o70t5jpil-varad80076s-projects.vercel.app"],
+        methods:['GET','POST'],
+        credentials:true
+    }
+));
 
 //mongoDb connection
 const connectDB = require('./db/connection');
