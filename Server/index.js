@@ -22,7 +22,7 @@ console.log('mongoDB Connected');
 const contact = require('./models/Contact');
 
 //post request fro contact collection
-app.post("/", async(req,res) => {
+app.post("/contact", async(req,res) => {
     console.log("Server is Running")
     let contacts = new contact(req.body);
     let result = await contacts.save();
