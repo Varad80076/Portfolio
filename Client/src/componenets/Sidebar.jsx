@@ -17,7 +17,7 @@ function Sidebar() {
     <div className="bg-[#1e1e1f] text-white w-full sticky right-0 flex sm:flex-col sm:w-72 h-fit sm:h-[663px] rounded-xl border-[#3c3c3c] border-1">
       <figure className="bg-[#333333] mt-10 mx-5 bg-red  w-[155px] h-[155px] hidden sm:block rounded-3xl">
         <img
-          src="/src/assets/my-avatar.png"
+          src="/my-avatar.png"
           alt="My Avatar"
         />
       </figure>
