@@ -54,7 +54,7 @@ const Experience = () => {
                       src={post.imgSrc}
                       alt={post.alt}
                       loading="lazy"
-                      className="w-full h-full object-cover rounded-lg"
+                      className="w-full h-full flex flex-wrap object-cover rounded-lg"
                     />
                   </figure>
                 
