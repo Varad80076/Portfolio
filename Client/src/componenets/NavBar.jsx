@@ -20,7 +20,7 @@ function NavBar(args) {
   
           <Navbar {...args} className=''>
             <img
-          src="/src/assets/my-avatar.png"
+          src="/my-avatar.png"
           alt="My Avatar"
           className="relative top-2  bg-[#333333] mt-0 mb-3 sm:mt-10 sm:mx-2 ml-3 mr-4 bg-red  w-[50px] h-[50px]  rounded-full navbar-expand-lg"
         />

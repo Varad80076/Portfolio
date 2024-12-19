@@ -65,7 +65,7 @@ I have worked on projects for well-known brands and gained hands-on experience d
         </li>
         <li className="flex flex-row service-item bg-gray-800 text-white p-6 rounded-lg shadow-lg">
           <div className="service-icon-box mb-4 m-3">
-            <img src="/user-experience .png" alt="mobile app icon" width="70" className="mx-auto" />
+            <img src="/UIUX.png" alt="mobile app icon" width="70" className="mx-auto" />
           </div>
           <div className="service-content-box">
             <h4 className="text-xl font-semibold text-start">Ui-Ux Desiging </h4>
