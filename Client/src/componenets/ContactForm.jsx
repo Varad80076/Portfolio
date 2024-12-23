@@ -13,7 +13,7 @@ function ContactFormm() {
   const collectData = async (e) => {
       e.preventDefault();
       try {
-        const response = await fetch('https://portfolio-flame-rho-71.vercel.app/contact', {
+        const response = await fetch('https://portfolio-flame-rho-71.vercel.app/',"http://localhost:4000/", {
           method: 'POST',
           body: JSON.stringify({ name, email, message }), // Simplified object creation
           headers: {

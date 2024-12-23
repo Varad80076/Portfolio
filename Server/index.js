@@ -7,7 +7,7 @@ app.use(express.json());
 const cors =require('cors');
 app.use(cors(
     {
-        origin:["https://portfolio-varad-theta.vercel.app","portfolio-varad-4ib9ud8fa-varad80076s-projects.vercel.app","http://localhost:4000/"],
+        origin:["https://portfolio-varad-theta.vercel.app","portfolio-varad-4ib9ud8fa-varad80076s-projects.vercel.app"],
         methods:['GET','POST'],
         allowedHeaders: 'Content-Type,Authorization',
     }
@@ -22,7 +22,7 @@ console.log('mongoDB Connected');
 const contact = require('./models/Contact');
 
 //post request fro contact collection
-app.post("/contact", async(req,res) => {
+app.post("/", async(req,res) => {
     console.log("Server is Running")
     let contacts = new contact(req.body);
     let result = await contacts.save();
