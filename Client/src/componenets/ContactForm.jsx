@@ -13,12 +13,13 @@ function ContactFormm() {
   const collectData = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://portfolio-flame-rho-71.vercel.app/", { // Ensure full URL with protocol
+      const response = await fetch("https://portfolio-flame-rho-71.vercel.app/","portfolio-666yq2zfl-varad80076s-projects.vercel.app/", { // Ensure full URL with protocol
         method: 'POST',
         body: JSON.stringify({ name, email, message }),
         headers: {
           'Content-Type': 'application/json',
         },
+        mode: 'no-cors',
       });
 
       if (!response.ok) {

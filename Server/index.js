@@ -16,6 +16,8 @@ app.use(cors({
     methods: ['GET', 'POST'],
     allowedHeaders: 'Content-Type,Authorization',
 }));
+app.options('*', cors());  // Enable preflight request handling for all routes
+
 
 connectDB;
 console.log('MongoDB Connected');
