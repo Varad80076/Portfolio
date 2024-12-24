@@ -23,7 +23,7 @@ app.options('*', cors());  // Enable preflight request handling for all routes
 connectDB;
 console.log('MongoDB Connected');
 
-app.post("/", async (req, res) => {
+app.post("/contact", async (req, res) => {
     console.log("Server is Running");
     try {
         let contacts = new contact(req.body);
