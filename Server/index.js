@@ -9,12 +9,13 @@ const PORT = 4000;
 app.use(express.json());
 app.use(cors({
     origin: [
+        "https://portfolio-varad-theta.vercel.app/contact",
         "https://portfolio-varad-theta.vercel.app",
         "https://portfolio-varad-4ib9ud8fa.vercel.app",
-        "https://portfolio-varad-theta.vercel.app/contact"
     ],
     methods: ['GET', 'POST'],
     allowedHeaders: 'Content-Type,Authorization',
+    mode:'no-cors'
 }));
 app.options('*', cors());  // Enable preflight request handling for all routes
 
