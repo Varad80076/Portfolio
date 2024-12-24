@@ -7,7 +7,7 @@ import NavBar from './componenets/NavBar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import About from './componenets/About';
 import Experience from './componenets/Experience';
-import ContactFormm from './componenets/ContactForm';
+import ContactForm from './componenets/ContactForm';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -91,7 +91,7 @@ function App() {
               <Route path="/about" element={<About />} /> {/* New Component Page */}
               <Route path="/resume" element={<Resume />} /> {/* Resume Page */}
               <Route path="/experience" element={<Experience />} /> {/* New Component Page */}
-              <Route path="/contact" element={<ContactFormm />} /> {/* New Component Page */}
+              <Route path="/contact" element={<ContactForm />} /> {/* New Component Page */}
               <Route path="/project" element={<Projects />} /> {/* New Component Page */}
             </Routes>
             </div>
