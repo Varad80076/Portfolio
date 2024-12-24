@@ -6,42 +6,39 @@ import { faTelegram   } from '@fortawesome/free-brands-svg-icons';
 
 
 function ContactFormm() {
-  const [name,setName] = useState("");
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
   const collectData = async (e) => {
-      e.preventDefault();
-      try {
-        const response = await fetch("portfolio-flame-rho-71.vercel.app/", {
-          method: 'POST',
-          body: JSON.stringify({ name, email, message }), // Simplified object creation
-          headers: {
-            'Content-Type': 'application/json' // Corrected header name
-          }
-        });
-  
-        if (!response.ok) {
-          // Handle HTTP errors (status codes outside the 200-299 range)
-          const errorData = await response.json(); // Attempt to parse error response
-          const errorMessage = errorData?.message || response.statusText || 'An error occurred.';
-          throw new Error(errorMessage); // Re-throw the error for handling below
-        }
-  
-        const data = await response.json(); // Parse the JSON response
-        console.log(data);
-        localStorage.setItem("contacts", JSON.stringify(data));
-        console.log(data, 'data sent successfully');
-       setName("");
-       setEmail("");
-       setMessage("");
-       
-  
-      }catch (error) {
-        console.error("Error sending data:", error);
-        // Display an error message to the user, e.g., using an alert or updating the UI
-        alert("Failed to send message. Please try again later."); // Example alert
+    e.preventDefault();
+    try {
+      const response = await fetch("https://portfolio-flame-rho-71.vercel.app/", { // Ensure full URL with protocol
+        method: 'POST',
+        body: JSON.stringify({ name, email, message }),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        const errorMessage = errorData?.message || response.statusText || 'An error occurred.';
+        throw new Error(errorMessage);
       }
+
+      const data = await response.json();
+      console.log("Data sent successfully:", data);
+      localStorage.setItem("contacts", JSON.stringify(data));
+
+      setName("");
+      setEmail("");
+      setMessage("");
+      alert("Message sent successfully!");
+    } catch (error) {
+      console.error("Error sending data:", error);
+      alert("Failed to send message. Please try again later.");
+    }
     };
   // const data = await result.json;
   // console.log(data);
