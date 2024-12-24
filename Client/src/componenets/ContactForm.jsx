@@ -13,33 +13,29 @@ function ContactFormm() {
   const collectData = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://portfolio-flame-rho-71.vercel.app/","portfolio-666yq2zfl-varad80076s-projects.vercel.app/", { // Ensure full URL with protocol
-        method: 'POST',
-        body: JSON.stringify({ name, email, message }),
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        mode: 'no-cors',
-      });
+        const response = await fetch("https://portfolio-flame-rho-71.vercel.app/", {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ name, email, message }),
+        });
 
-      if (!response.ok) {
-        const errorData = await response.json();
-        const errorMessage = errorData?.message || response.statusText || 'An error occurred.';
-        throw new Error(errorMessage);
-      }
+        if (!response.ok) {
+            throw new Error('Failed to send data');
+        }
 
-      const data = await response.json();
-      console.log("Data sent successfully:", data);
-      localStorage.setItem("contacts", JSON.stringify(data));
-
-      setName("");
-      setEmail("");
-      setMessage("");
-      alert("Message sent successfully!");
+        const data = await response.json();
+        console.log(data);
+        setName("");
+        setEmail("");
+        setMessage("");
     } catch (error) {
-      console.error("Error sending data:", error);
-      alert("Failed to send message. Please try again later.");
+        console.error('Error:', error);
+        alert("Failed to send message. Please try again later.");
     }
+
+
     };
   // const data = await result.json;
   // console.log(data);
