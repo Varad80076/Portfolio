@@ -6,11 +6,11 @@ app.use(express.json());
 
 const cors =require('cors');
 app.use(cors(
-    {
-        origin:["https://portfolio-varad-theta.vercel.app","portfolio-varad-4ib9ud8fa-varad80076s-projects.vercel.app"],
-        methods:['GET','POST'],
-        allowedHeaders: 'Content-Type,Authorization',
-    }
+    // {
+    //     origin:["https://portfolio-varad-theta.vercel.app","portfolio-varad-4ib9ud8fa-varad80076s-projects.vercel.app"],
+    //     methods:['GET','POST'],
+    //     allowedHeaders: 'Content-Type,Authorization',
+    // }
 ));
 
 //mongoDb connection
