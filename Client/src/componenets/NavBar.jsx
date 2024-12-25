@@ -22,10 +22,10 @@ function NavBar(args) {
             <img
           src="/my-avatar.png"
           alt="My Avatar"
-          className="relative top-2  bg-[#333333] mt-0 mb-3 sm:mt-10 sm:mx-2 ml-3 mr-4 bg-red  w-[50px] h-[50px]  rounded-full navbar-expand-lg"
+          className="relative top-2  bg-[#333333] mt-0 mb-3 sm:mt-10 sm:mx-1 mx-0   bg-red below-sm:w-[30px] below-sm:h-[30px]  sm:w-[50px] sm:h-[50px] w-[40px] h-[40px] rounded-full navbar-expand-lg"
         />
-            <Link className=' relative top-1 hover:text-cyan-500 text-[22px] mr-2 pr-3' href="/">Varad Badgujar</Link>
-            <NavbarToggler className='relative top-1 flex flex-wrap rounded-full border-[px] bg-white text-gray-50 hover:text-gray-500' onClick={toggle} />
+            <Link className=' relative top-1 ml-1 hover:text-cyan-500 below-sm:text-[14px] text-[22px]  mr-2 pr-1' href="">Varad Badgujar</Link>
+            <NavbarToggler className='relative top-1 flex flex-wrap rounded-full  h-[40px] w-[45px] below-sm:w-[40px] below-sm:h-[35px] bg-[#9b9b9bc1] text-gray-50 hover:text-gray-500' onClick={toggle} />
             <Collapse isOpen={isOpen} navbar>
               <Nav className="me-auto gap-1 text-center" navbar>
                

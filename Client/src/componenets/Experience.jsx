@@ -29,14 +29,14 @@ const Experience = () => {
   ];
 
   return (
-    <article className="blog" data-page="blog">
+    <article className="blog " data-page="blog">
       <header>
         <h2 className="text-3xl text-white border-b-4 mb-4 p-2 border-[#af862c] flex justify-start font-bold transition-transform duration-300 w-fit">
           Experience
         </h2>
       </header>
 
-      <section className="blog-posts">
+      <section className=" blog-posts ">
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 ">
           {blogPosts.map((post) => (
             <li
@@ -48,13 +48,13 @@ const Experience = () => {
             >
               {/* Back Side */}
               {visibleCard === post.id && (
-                <div className="front-side p-4 w-full bg-white rounded-lg shadow-md">
+                <div className="front-side sm:p-2 w-full bg-white rounded-lg shadow-md ">
                   <figure className="project-img">
                     <img
                       src={post.imgSrc}
                       alt={post.alt}
                       loading="lazy"
-                      className="w-full h-full flex flex-wrap object-cover rounded-lg"
+                      className="w-fit h-fit flex flex-wrap object-cover rounded-lg"
                     />
                   </figure>
                 

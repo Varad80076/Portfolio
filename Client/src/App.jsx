@@ -20,6 +20,7 @@ import { Link } from "react-router-dom";
 import Resume from './componenets/Resume';
 import Projects from './componenets/Projects';
 
+
 function App() {
    // Create an array to loop through (e.g., array with 4 elements to repeat NewCom)
   //  const componentsArray = [1, 2, 3, 4,5,6,7,8]; // This array will define how many times you repeat the component
@@ -33,7 +34,7 @@ function App() {
     <div className=' flex flex-col sm:flex-row bg-grey-500 justify-around gap-3 p-0 rounded-md h-[720px] mt-0 w-full '> 
      <Sidebar/>
     
-    <div id='varad' className='relative flex flex-wrap bg-[#1e1e1f] w-full sm:w-6xl  justify-around  gap-3 h-[790px] rounded-xl sm:h-[663px] overflow-scroll scrollbar-none border-[#3c3c3c] border-1'>
+    <div id='varad' className='relative flex flex-wrap bg-[#1e1e1f] w-full sm:w-6xl  justify-around  gap-3 h-[580px] rounded-xl sm:h-[663px] overflow-scroll scrollbar-none border-[#3c3c3c] border-1'>
         {/*NavBar start  */}
         <div id="nev" className="hidden  absolute z-10 sm:flex flex-row gap-1  right-0  justify-items-end items-center bg-[#282829] p-3 lg:p-2  rounded-tr-lg rounded-bl-sm ">
   <ul className="flex flex-row gap-1">
@@ -84,7 +85,8 @@ function App() {
 
 
       {/*NavBar end */}
-      <div className='relative flex flex-wrap bg-grey-700  w-full sm:w-6xl sm:mt-[68px] pt-3 px-3 pb-3 justify-around gap-2  h-[790px] rounded-xl sm:h-[663px] overflow-scroll scrollbar-none '>
+      <div className='relative flex flex-wrap bg-grey-700  w-full sm:w-6xl sm:mt-[68px] pt-3 px-3 pb-3 justify-around gap-2  h-[785px] rounded-xl sm:h-[563px] overflow-scroll scrollbar-none '>
+    
     <Routes>
               <Route path="/" element={<About />} /> Default Home
               <Route path="/nevbar" element={<NavBar />} /> {/* About Page */}
