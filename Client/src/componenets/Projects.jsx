@@ -18,6 +18,7 @@ const Projects = () => {
     { id: 7, title: 'PortFolio', category: 'Web development', image: '/portfolio.png' },
     { id: 8, title: 'Music Clone', category: 'Ui/Ux Design', image: '/music.png' },
     { id: 9, title: 'Shoe shoping Website', category: 'Web development', image: '/shoe.png' },
+    { id: 10, title: 'Authentication Website', category: 'Web development', image: '/auth.png' },
   ];
 
   const filteredProjects =
